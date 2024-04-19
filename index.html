@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="products">
+          <h1 class="products__title">Products</h1>
+          <div class="products__header">
+            <button class="products__add-products">Add products</button>
+          </div>
+          <div class="products__cards">
+          </div>
+        </div>
+        <div class="box"></div>
+        <!-- MODAL -->
+        <div class="modal">
+          <form class="form">
+            <div class="modal__cards">
+              <div class="form-control">
+                <input type="text" id="name" required="">
+                <label>
+                    <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">a</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">e</span><span>
+                </label>
+              </div>
+              <div class="form-control">
+                <input
+                  id="quantity"
+                  type="number"
+                  required
+                />
+                <label>
+                  <span style="transition-delay:0ms">Q</span><span style="transition-delay:50ms">u</span><span style="transition-delay:100ms">a</span><span style="transition-delay:150ms">n</span><span style="transition-delay:200ms">t</span><span style="transition-delay:250ms">i</span><span style="transition-delay:300ms">t</span><span style="transition-delay:350ms">y</span>
+                </label>
+              </div>
+              <div class="form-control">
+                <input
+                  id="img"
+                  type="text"
+                  required
+                />
+                <label>
+                  <span style="transition-delay:0ms">I</span><span style="transition-delay:50ms">m</span><span style="transition-delay:100ms">g</span>
+                </label>
+              </div>
+              <div class="form-control">
+                <input
+                  id="price"
+                  type="text"
+                  required
+                />
+                <label>
+                  <span style="transition-delay:0ms">P</span><span style="transition-delay:50ms">r</span><span style="transition-delay:100ms">i</span><span style="transition-delay:150ms">c</span><span style="transition-delay:200ms">e</span>
+                </label>
+              </div>
+              <div class="modal__card">
+                <select id="unit">
+                  <option disabled selected hidden >Unit</option>
+                  <option value="kg">Klogram</option>
+                  <option value="gr">Gram</option>
+                  <option value="dona">Dona</option>
+                  <option value="m">Metr</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <input
+                  id="color"
+                  type="text"
+                  required
+                />
+                <label>
+                  <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">l</span><span style="transition-delay:150ms">o</span><span style="transition-delay:200ms">r</span>
+                </label>
+              </div>
+            </div>
+            <div class="modal__btns">
+              <button type="submit" class="modal__btn-add modal__btn">
+                Add
+              </button>
+              <button type="button" class="modal__btn-close modal__btn">Close</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

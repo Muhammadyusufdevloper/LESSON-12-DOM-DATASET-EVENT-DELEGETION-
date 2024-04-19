@@ -1,0 +1,93 @@
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 10;
+    background-color: rgba(35, 59, 70, 0.913);
+    padding: 50px 20px 60px;
+    border-radius: 6px;
+    display: none;
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+        margin-bottom: 30px;
+    }
+    &__btns{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    &__btn{
+        padding: 6px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+    }
+    &__btn:first-child{
+        background-color: aqua;
+    }
+    &__btn:last-child{
+        background-color: red;
+        color: white;
+    }
+}
+#unit{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #fff solid;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+#unit option{
+    color: black;
+}
+
+.form-control {
+    position: relative;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+  }
