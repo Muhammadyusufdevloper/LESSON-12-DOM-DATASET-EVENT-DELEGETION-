@@ -87,7 +87,7 @@ const deletProdact = (id) => {
   if (!confirm("Deletga rozimisis")) return
   let index = PRODUCTSDATA.findIndex((u) => u.id === id);
   PRODUCTSDATA.splice(index, 1);
-  console.log(PRODUCTSDATA);
+  localStorage.setItem(PRODACTSJSON,JSON.stringify(PRODUCTSDATA))
   cratProducts(PRODUCTSDATA);
 };
 
