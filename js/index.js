@@ -92,6 +92,8 @@ const deletProdact = (id) => {
 };
 
 productsCards.addEventListener("click", (e) => {
-  deletProdact(e.target.dataset.id);
+  if (e.target.name === "delete") {
+    deletProdact(e.target.dataset.id);
+  }
 });
 
